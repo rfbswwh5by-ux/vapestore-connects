@@ -1,0 +1,44 @@
+{
+  "name": "AdminAttempt",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string"
+    },
+    "fail_count": {
+      "type": "number",
+      "default": 0
+    },
+    "window_start_ms": {
+      "type": "number"
+    },
+    "locked_until_ms": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "key"
+  ],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "name": "SiteSettings",
+  "type": "object",
+  "properties": {
+    "singleton": {
+      "type": "boolean",
+      "default": true
+    },
+    "business_name": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "logo_url": {
+      "type": "string"
+    },
+    "favicon_url": {
+      "type": "string"
+    },
+    "color_background": {
+      "type": "string"
+    },
+    "color_surface": {
+      "type": "string"
+    },
+    "color_primary": {
+      "type": "string"
+    },
+    "color_secondary": {
+      "type": "string"
+    },
+    "color_ink": {
+      "type": "string"
+    },
+    "color_muted": {
+      "type": "string"
+    },
+    "font_heading": {
+      "type": "string"
+    },
+    "font_body": {
+      "type": "string"
+    },
+    "button_style": {
+      "type": "string"
+    },
+    "logo_size": {
+      "type": "string"
+    },
+    "header_style": {
+      "type": "string"
+    },
+    "footer_style": {
+      "type": "string"
+    },
+    "background_image_url": {
+      "type": "string"
+    },
+    "hero_eyebrow": {
+      "type": "string"
+    },
+    "hero_headline": {
+      "type": "string"
+    },
+    "hero_subheadline": {
+      "type": "string"
+    },
+    "hero_image_url": {
+      "type": "string"
+    },
+    "about_heading": {
+      "type": "string"
+    },
+    "about_body": {
+      "type": "string"
+    },
+    "about_image_url": {
+      "type": "string"
+    },
+    "about_sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address_line1": {
+      "type": "string"
+    },
+    "address_line2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "postal_code": {
+      "type": "string"
+    },
+    "maps_query": {
+      "type": "string"
+    },
+    "social_instagram": {
+      "type": "string"
+    },
+    "social_facebook": {
+      "type": "string"
+    },
+    "social_tiktok": {
+      "type": "string"
+    },
+    "social_x": {
+      "type": "string"
+    },
+    "hours": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "string"
+          },
+          "hours": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "holiday_hours": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "hours": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "store_policies": {
+      "type": "string"
+    },
+    "meta_title": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "string"
+    },
+    "show_categories": {
+      "type": "boolean"
+    },
+    "show_featured": {
+      "type": "boolean"
+    },
+    "show_about": {
+      "type": "boolean"
+    },
+    "show_location": {
+      "type": "boolean"
+    },
+    "show_hours": {
+      "type": "boolean"
+    },
+    "banner_visible": {
+      "type": "boolean"
+    },
+    "banner_text": {
+      "type": "string"
+    },
+    "banner_link_label": {
+      "type": "string"
+    },
+    "banner_link_url": {
+      "type": "string"
+    },
+    "age_minimum": {
+      "type": "number",
+      "default": 21
+    },
+    "age_gate_title": {
+      "type": "string"
+    },
+    "age_gate_message": {
+      "type": "string"
+    },
+    "age_denied_message": {
+      "type": "string"
+    },
+    "age_verification_mode": {
+      "type": "string"
+    },
+    "age_provider_name": {
+      "type": "string"
+    },
+    "age_provider_url": {
+      "type": "string"
+    },
+    "privacy_policy": {
+      "type": "string"
+    },
+    "terms_conditions": {
+      "type": "string"
+    },
+    "compliance_notice": {
+      "type": "string"
+    },
+    "footer_note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "business_name"
+  ],
+  "rls": {
+    "read": {},
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
