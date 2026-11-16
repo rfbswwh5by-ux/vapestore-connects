@@ -1,0 +1,47 @@
+{
+  "name": "AdminSession",
+  "type": "object",
+  "properties": {
+    "token_hash": {
+      "type": "string"
+    },
+    "credential_id": {
+      "type": "string"
+    },
+    "expires_at_ms": {
+      "type": "number"
+    },
+    "ip_hash": {
+      "type": "string"
+    },
+    "deployment_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "token_hash",
+    "expires_at_ms"
+  ],
+  "rls": {
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
